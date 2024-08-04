@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello World Extension</title>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 10px;
+      width: 400px;
+    }
+    input[type="file"] {
+      margin-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <h1>Upload Excel File</h1>
+  <input type="file" id="fileInput" accept=".xlsx" />
+  <table id="dataTable">
+    <thead>
+      <tr id="headerRow"></tr>
+    </thead>
+    <tbody id="dataBody"></tbody>
+  </table>
+  <script src="popup.js"></script>
+  <script src="xlsx.full.min.js"></script>
+
+</body>
+</html>
